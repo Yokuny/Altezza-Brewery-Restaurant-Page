@@ -1,0 +1,88 @@
+.videoContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: min(60vw, 700px);
+}
+/* video */
+.videoContent .mainVideoContent video{
+    width: 100vw;
+    height: min(60vw, 700px);
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+}
+/* info */
+.videoContent .mainTitleContent{
+    position:absolute;
+    width: 100%;
+    height: min(60vw, 700px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.videoContent .mainTitleContent .titleContent{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.videoContent .mainTitleContent .titleContent img{
+    width: min(40vw, 350px);
+}
+.videoContent .mainTitleContent .titleContent h1{
+    margin-top: 30px;
+    font-size: 5rem;
+    color: #d4b360;
+    text-align: center;
+}
+.videoContent .mainTitleContent .titleContent p{
+    margin-top: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 30px;
+}
+.videoContent .mainTitleContent .titleContent button{
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: transparent;
+    padding: 12px 24px;
+    border-radius: 24px;
+    color: black;
+    background-color: #cab165;
+}
+
+@media (max-width: 1000px) {
+    .videoContent .mainTitleContent .titleContent{
+        width: 90%;
+    }
+    .videoContent .mainTitleContent .titleContent img{
+        width: 30vw;
+    }
+    .videoContent .mainTitleContent .titleContent h1{
+        margin-top: 10px;
+        font-size: 2.8rem;
+    }
+    .videoContent .mainTitleContent .titleContent p{
+        margin-top: 10px;
+        font-size: 1.5rem;
+        line-height: initial;
+    }
+    .videoContent .mainTitleContent .titleContent button{
+        margin-top: 10px;
+        font-size: 1.5rem;
+        padding: 6px 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .videoContent .mainTitleContent .titleContent img{
+        display: none;
+    }
+}

@@ -25,6 +25,9 @@
 .headerContentBarSize img{
     height: 100px;
 }
+.headerContentBarSize img:hover{
+    cursor: pointer;
+}
 .headerLinks{
     display: flex;
     align-items: center;
@@ -44,6 +47,9 @@
     border-radius: 12px;
     color: black;
     background-color: #cab165;
+}
+.headerLinks a:hover{
+    cursor: pointer;
 }
 @media (max-width:1250px) {
     .headerContentBarSize img{

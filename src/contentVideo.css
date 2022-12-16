@@ -57,7 +57,6 @@
     color: black;
     background-color: #cab165;
 }
-
 @media (max-width: 1000px) {
     .videoContent .mainTitleContent .titleContent{
         width: 90%;
@@ -80,7 +79,6 @@
         padding: 6px 24px;
     }
 }
-
 @media (max-width: 550px) {
     .videoContent .mainTitleContent .titleContent img{
         display: none;

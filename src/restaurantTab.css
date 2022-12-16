@@ -1,0 +1,119 @@
+.restaurantCardSizing{
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restauranteImagemSizing{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restauranteImagemSizing img{
+    height: 400px;  
+}
+.restaurantInfoIntro{
+    width: 40%;
+}
+.restaurantInfoIntro h1{
+    font-size: 2.8rem;
+}
+.restaurantInfoIntro h4{
+    color: #cab165;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.restaurantInfoIntro p{
+    margin-top: 15px;
+    font-size: 1.63rem;
+    line-height: initial;
+}
+/* */
+.menuCardInfo{
+    width: 30%;
+    margin-right: 5%;
+}
+.menuCardInfo h1{
+    font-size: 3rem;
+    color: #cab165;
+}
+.menuCardInfo h4{
+    margin-top: 20px;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+.menuBackgroundSize{
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: right;
+}
+.menuFloatingInfos{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.menuFloatingInfos p{
+    color: #cab165;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.menuFloatingInfos h4{
+    margin-top: 20px;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+.menuFloatingInfos button{
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #cab165;
+    border: transparent;
+    border-radius: 12px;
+    font-size: 1.63rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+.menuFloatingInfos button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:980px) {
+    .restaurantCardSizing{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .restauranteImagemSizing{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cab165;
+    }
+    .restauranteImagemSizing img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 0px 80%;
+    }
+    .restaurantInfoIntro{
+        width: 90%;
+        margin-top: 3vh;
+    }
+    .menuCardInfo{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .menuCardInfo h1{
+        font-size: 2.4rem;
+    }
+    .menuCardInfo h4{
+        margin-top: 10px;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+}

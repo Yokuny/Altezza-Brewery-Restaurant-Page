@@ -1,6 +1,6 @@
-import "./contentVideo.css";
-import logoCompleta from "./logo_altezza_completa.png";
-import homeBackgroundVideo from "./banner_altezza.mp4";
+import "../css/homeTab.css";
+import logoCompleta from "../picture/logo_altezza_completa.png";
+import homeBackgroundVideo from "../picture/banner_altezza.mp4";
 export default function homeTab() {
   const videoContent = document.createElement("main");
   videoContent.classList.add("videoContent");

@@ -1,5 +1,10 @@
-import "./headerBar.css";
-import headerLogoImg from "./altezza icon.png";
+import homeTab from "./homeTab.js";
+import "../css/restaurantTab.css";
+import restaurantTab from "./restaurantTab.js";
+import "../css/headerBar.css";
+import pousadasTab from "./pousadasTab.js";
+import "../css/pousadasTab.css";
+import headerLogoImg from "../picture/altezza icon.png";
 export default function restaurantHeader() {
   const pageHeaderBarBackground = document.createElement("header");
   pageHeaderBarBackground.classList.add("pageHeaderBarBackground");
@@ -14,12 +19,15 @@ export default function restaurantHeader() {
   headerLinks.classList.add("headerLinks");
   const homeLinkElement = document.createElement("a");
   homeLinkElement.textContent = "Home";
+  homeLinkElement.addEventListener("click", changeToHome);
   headerLinks.appendChild(homeLinkElement);
   const restauranteLinkElement = document.createElement("a");
   restauranteLinkElement.textContent = "Restaurante";
+  restauranteLinkElement.addEventListener("click", changeToRestaurante);
   headerLinks.appendChild(restauranteLinkElement);
   const pousadasLinkElement = document.createElement("a");
   pousadasLinkElement.textContent = "Pousadas";
+  pousadasLinkElement.addEventListener("click", changeToPousadas);
   headerLinks.appendChild(pousadasLinkElement);
   const contatoLinkElement = document.createElement("a");
   contatoLinkElement.textContent = "Contato";
@@ -43,4 +51,19 @@ export default function restaurantHeader() {
     </header>
     */
   return pageHeaderBarBackground;
+}
+function changeToHome() {
+  document.body.innerHTML = " ";
+  document.body.append(restaurantHeader());
+  document.body.append(homeTab());
+}
+function changeToRestaurante() {
+  document.body.innerHTML = " ";
+  document.body.append(restaurantHeader());
+  document.body.append(restaurantTab());
+}
+function changeToPousadas() {
+  document.body.innerHTML = " ";
+  document.body.append(restaurantHeader());
+  document.body.append(pousadasTab());
 }

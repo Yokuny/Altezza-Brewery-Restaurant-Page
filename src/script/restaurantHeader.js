@@ -29,9 +29,6 @@ export default function restaurantHeader() {
   pousadasLinkElement.textContent = "Pousadas";
   pousadasLinkElement.addEventListener("click", changeToPousadas);
   headerLinks.appendChild(pousadasLinkElement);
-  const contatoLinkElement = document.createElement("a");
-  contatoLinkElement.textContent = "Contato";
-  headerLinks.appendChild(contatoLinkElement);
   headerContentBarSize.appendChild(headerLinks);
   pageHeaderBar.appendChild(headerContentBarSize);
   pageHeaderBarBackground.appendChild(pageHeaderBar);
@@ -44,7 +41,6 @@ export default function restaurantHeader() {
                     <a>Home</a>
                     <a>Restaurante</a>
                     <a>Pousadas</a>
-                    <a>Contato</a>
                 </div>
             </div>
         </div>

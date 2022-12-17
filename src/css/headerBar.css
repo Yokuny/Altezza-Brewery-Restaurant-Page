@@ -39,15 +39,6 @@
     text-transform: uppercase;
     letter-spacing: 0.4px;
 }
-.headerLinks a:nth-child(1){
-    color: #cab165;
-}
-.headerLinks a:last-child{
-    padding: 12px;
-    border-radius: 12px;
-    color: black;
-    background-color: #cab165;
-}
 .headerLinks a:hover{
     cursor: pointer;
 }

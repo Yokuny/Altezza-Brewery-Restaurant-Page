@@ -19,14 +19,17 @@ export default function restaurantHeader() {
   headerLinks.classList.add("headerLinks");
   const homeLinkElement = document.createElement("a");
   homeLinkElement.textContent = "Home";
+  homeLinkElement.id = "home";
   homeLinkElement.addEventListener("click", changeToHome);
   headerLinks.appendChild(homeLinkElement);
   const restauranteLinkElement = document.createElement("a");
   restauranteLinkElement.textContent = "Restaurante";
+  restauranteLinkElement.id = "restaurante";
   restauranteLinkElement.addEventListener("click", changeToRestaurante);
   headerLinks.appendChild(restauranteLinkElement);
   const pousadasLinkElement = document.createElement("a");
   pousadasLinkElement.textContent = "Pousadas";
+  pousadasLinkElement.id = "pousadas";
   pousadasLinkElement.addEventListener("click", changeToPousadas);
   headerLinks.appendChild(pousadasLinkElement);
   headerContentBarSize.appendChild(headerLinks);
@@ -51,15 +54,21 @@ export default function restaurantHeader() {
 function changeToHome() {
   document.body.innerHTML = " ";
   document.body.append(restaurantHeader());
+  const homeTagColor = document.getElementById("home");
+  homeTagColor.style.color = "#cab165";
   document.body.append(homeTab());
 }
 function changeToRestaurante() {
   document.body.innerHTML = " ";
   document.body.append(restaurantHeader());
+  const restauranteTagColor = document.getElementById("restaurante");
+  restauranteTagColor.style.color = "#cab165";
   document.body.append(restaurantTab());
 }
 function changeToPousadas() {
   document.body.innerHTML = " ";
   document.body.append(restaurantHeader());
+  const PousadaTagColor = document.getElementById("pousadas");
+  PousadaTagColor.style.color = "#cab165";
   document.body.append(pousadasTab());
 }
